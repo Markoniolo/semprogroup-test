@@ -1,0 +1,53 @@
+.label {
+  position: relative;
+  cursor: text;
+}
+
+.input {
+  padding: 15px 0 5px;
+  font-size: 17px;
+  line-height: 160%;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  @include media(lg) {
+    padding: 14px 0 4px;
+    font-size: 16px;
+  }
+  @include media(md) {
+    font-size: 14px;
+  }
+  @include media(xs) {
+    padding: 13px 0 3px;
+    font-size: 11px;
+  }
+  &:placeholder-shown ~ .placeholder {
+    transform: scale(1);
+    top: 15px;
+  }
+  &:focus ~ .placeholder {
+    top: 0;
+    transform: scale(0.6);
+  }
+}
+
+.placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 17px;
+  line-height: 160%;
+  text-transform: uppercase;
+  transform: scale(0.6);
+  transform-origin: top left;
+  transition-duration: $transition-duration;
+  transition-property: transform, top;
+  @include media(lg) {
+    font-size: 16px;
+  }
+  @include media(md) {
+    font-size: 14px;
+  }
+  @include media(xs) {
+    font-size: 11px;
+  }
+}

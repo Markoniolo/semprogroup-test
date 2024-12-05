@@ -1,0 +1,228 @@
+.header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: $white;
+}
+
+.header__cont {
+
+}
+
+.header__area {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+  @include media(lg) {
+    padding: 28px 0;
+  }
+  @include media(md) {
+    padding: 30px 0;
+  }
+  @include media(sm) {
+    padding: 40px 0;
+    justify-content: space-between;
+  }
+  @include media(xs) {
+    padding: 20px 0;
+  }
+}
+
+.header__menu {
+  margin-right: 43px;
+  display: flex;
+  align-items: center;
+  @include media(lg) {
+    margin-right: 40px;
+  }
+  @include media(md) {
+    margin-right: 25px;
+  }
+  @include media(sm) {
+    margin-right: 0;
+    order: 1;
+  }
+  &:hover {
+    .header__burger {
+      &::before {
+        transform: translateY(-2px);
+      }
+      &::after {
+        transform: translateY(2px);
+      }
+    }
+  }
+}
+
+.header__burger {
+  flex-shrink: 0;
+  position: relative;
+  width: 38px;
+  height: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include media(lg) {
+    width: 32px;
+    height: 14px;
+  }
+  @include media(xs) {
+    width: 29px;
+  }
+  &::before, &::after {
+    content: '';
+    height: 2px;
+    background-color: $blue;
+    transition-duration: $transition-duration;
+    @include media(xs) {
+      background-color: $black;
+    }
+  }
+}
+
+.header__burger-line {
+  height: 2px;
+  background-color: $blue;
+  @include media(xs) {
+    background-color: $black;
+  }
+}
+
+.header__menu-span {
+  margin-left: 15px;
+  flex-shrink: 0;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $dark;
+  @include media(lg) {
+    margin-left: 12px;
+    font-size: 13px;
+  }
+  @include media(md) {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  @include media(xs) {
+    display: none;
+  }
+}
+
+.header__select {
+  @include media(sm) {
+    order: 5;
+  }
+  @include media(xs) {
+    display: none;
+  }
+}
+
+.header__select-value {
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
+  @include media(lg) {
+    gap: 0 10px;
+  }
+  &::after {
+    content: '';
+    @include bg-icon('ic_chevron_down_white.svg');
+    width: 14px;
+    height: 8px;
+    flex-shrink: 0;
+    @include media(lg) {
+      width: 12px;
+    }
+  }
+}
+
+.header__select-value-span {
+  font-weight: 600;
+}
+
+.header__logo {
+  position: relative;
+  margin: 0 auto;
+  width: 187px;
+  height: 30px;
+  @include media(lg) {
+    width: 156px;
+    height: 25px;
+    left: -26px;
+  }
+  @include media(md) {
+    left: -24px;
+  }
+  @include media(sm) {
+    order: 3;
+    margin: 0;
+    left: 0;
+  }
+  @include media(xs) {
+    width: 131px;
+    height: 21px;
+  }
+}
+
+.header__logo-image {
+  height: 100%;
+}
+
+.header__phone {
+  margin-right: 45px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 100%;
+  color: $dark;
+  text-decoration: none;
+  @include media(lg) {
+    margin-right: 40px;
+    font-size: 14px;
+  }
+  @include media(md) {
+    margin-right: 35px;
+    font-size: 13px;
+  }
+  @include media(sm) {
+    &::before, &::after {
+      content: none;
+    }
+    @include bg-icon('ic_phone_black.svg');
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    border: 1px solid $grey;
+    order: 2;
+    margin-right: 0;
+  }
+  @include media(xs) {
+    order: 3;
+  }
+  span {
+    @include media(sm) {
+      display: none;
+    }
+  }
+}
+
+.header__order {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $blue;
+  @include media(lg) {
+    font-size: 13px;
+  }
+  @include media(md) {
+    font-size: 12px;
+  }
+  @include media(sm) {
+    display: none;
+  }
+}

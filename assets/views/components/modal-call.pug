@@ -1,0 +1,21 @@
+.modal-call.modal#modal-call
+  .modal-inner
+    button.modal-close
+    form.modal-call__form(data-element="modal-call-form")
+      .modal-call__title ЗАКАЗАТЬ ЗВОНОК
+      label.modal-call__label.label
+        input.modal-call__input.input(type='text' name='name' placeholder=' ')
+        span.modal-call__placeholder.placeholder Ваше имя
+      label.modal-call__label.label
+        input.modal-call__input.input(type='tel' name='phone' placeholder=' ' data-role="phone-mask-input")
+        span.modal-call__placeholder.placeholder Телефон
+      label.modal-call__label.label
+        input.modal-call__input.input(type='email' name='mail' placeholder=' ')
+        span.modal-call__placeholder.placeholder e-mail
+      .modal-call__policy
+        | Нажимая на кнопку «Отправить», вы ознакомлены и соглашаетесь с
+        |
+        a(href='#') политикой обработки персональных данных
+      button.modal-call__submit.btn-blue.double-text-box
+        span.double-text(data-double-text='ОТПРАВИТЬ')
+          span ОТПРАВИТЬ

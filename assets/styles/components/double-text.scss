@@ -1,0 +1,38 @@
+.double-text-box {
+  &:hover {
+    .double-text {
+      span {
+        transform: translateY(-100%);
+      }
+      &::after {
+        top: 0;
+      }
+    }
+  }
+}
+
+.double-text {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0 10px;
+  overflow: hidden;
+  font-weight: inherit;
+  span, &::after {
+    content: attr(data-double-text);
+    transition-duration: $transition-duration;
+  }
+  span {
+    position: relative;
+    transition-property: transform;
+    font-weight: inherit;
+    font-size: inherit;
+  }
+  &::after {
+    position: absolute;
+    top: 100%;
+    transition-property: top;
+  }
+}

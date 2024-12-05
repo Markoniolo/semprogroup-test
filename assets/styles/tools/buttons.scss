@@ -1,0 +1,54 @@
+.btn-blue {
+  cursor: pointer;
+  border: 1px solid $blue;
+  border-radius: 119px;
+  padding: 23px 30px;
+  background-color: $blue;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $white;
+  text-align: center;
+  @include media(lg) {
+    font-size: 14px;
+  }
+  @include media(sm) {
+    padding: 19px 20px;
+  }
+  @include media(xs) {
+    font-size: 11px;
+    padding: 17px 20px;
+  }
+  span {
+    font-weight: inherit;
+  }
+}
+
+.select-blue {
+  cursor: pointer;
+  border: 1px solid $blue;
+  border-radius: 119px;
+  padding: 18px 24px;
+  background-color: $blue;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $white;
+  @include media(lg) {
+    padding: 14px 20px;
+    font-size: 13px;
+  }
+  @include media(md) {
+    font-size: 12px;
+  }
+  @include media(sm) {
+    padding: 14px 18px;
+  }
+  span {
+    font-weight: inherit;
+  }
+}

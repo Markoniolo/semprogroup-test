@@ -1,0 +1,21 @@
+header.header
+  .header__cont.cont
+    .header__area
+      button.header__menu
+        span.header__burger
+          span.header__burger-line
+        span.header__menu-span МЕНЮ
+      .header__select
+        .header__select-value.select-blue.double-text-box
+          .header__select-value-span
+            .double-text(data-double-text='Выбрать квартиру')
+              span Выбрать квартиру
+      .header__logo
+        img.header__logo-image(src=staticImg('logo.svg') alt='')
+      a.header__phone.double-text-box(href=phone.link data-double-text=phone.mask)
+        .double-text(data-double-text=phone.mask)
+          span=phone.mask
+      button.header__order.double-text-box(data-role="modal-opener" data-modal-id="modal-call")
+        span.double-text(data-double-text='ЗАКАЗАТЬ ЗВОНОК')
+          span ЗАКАЗАТЬ ЗВОНОК
+

@@ -1,0 +1,15 @@
+.cap.section
+  .cap__cont.cont
+    .cap__area
+      picture.cap__picture
+        source(srcset=staticImg('cap/cap_1_320.png') media=`(max-width: ${breakpoints.sm})`)
+        source(srcset=staticImg('cap/cap_1_688.png') media=`(max-width: ${breakpoints.md})`)
+        source(srcset=staticImg('cap/cap_1_964.png') media=`(max-width: ${breakpoints.lg})`)
+        source(srcset=staticImg('cap/cap_1_1360.png') media=`(max-width: ${breakpoints.xl})`)
+        img.cap__image(src=staticImg('cap/cap_1.png') alt='')
+      .cap__bottom
+        .cap__text
+          | Дом бизнес-класса
+          br
+          | для ценителей роскоши
+        img.cap__logo(src=staticImg('cap/cap_logo.svg') alt='')

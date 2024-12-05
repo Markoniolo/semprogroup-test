@@ -1,0 +1,100 @@
+.cap {
+
+}
+
+.cap__cont {
+
+}
+
+.cap__area {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  height: calc(var(--100vh) - 133px);
+  @include media(lg) {
+    height: calc(var(--100vh) - 99px);
+  }
+  @include media(md) {
+    height: calc(var(--100vh) - 102px);
+  }
+  @include media(sm) {
+    height: calc(var(--100vh) - 123px);
+  }
+}
+
+.cap__picture {
+  margin-bottom: 50px;
+  flex-grow: 1;
+  min-height: 200px;
+  @include media(lg) {
+    margin-bottom: 40px;
+  }
+  @include media(md) {
+    margin-bottom: 30px;
+  }
+  @include media(sm) {
+    margin-bottom: 40px;
+  }
+  @include media(xs) {
+    margin-bottom: 20px;
+  }
+}
+
+.cap__image {
+  object-fit: cover;
+  height: 100%;
+}
+
+.cap__bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  @include media(sm) {
+    display: block;
+  }
+}
+
+.cap__text {
+  font-size: 31px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: $blue;
+  @include media(lg) {
+    font-size: 26px;
+  }
+  @include media(md) {
+    margin-left: 20px;
+    font-size: 19px;
+  }
+  @include media(sm) {
+    margin-bottom: 43px;
+    margin-left: 0;
+    font-size: 26px;
+  }
+  @include media(xs) {
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 150%;
+  }
+}
+
+.cap__logo {
+  margin-bottom: 12px;
+  max-width: 862px;
+  width: 100%;
+  @include media(lg) {
+    margin-bottom: 0;
+    max-width: 717px;
+  }
+  @include media(md) {
+    margin-bottom: 6px;
+    max-width: 554px;
+  }
+  @include media(sm) {
+    margin-bottom: 0;
+    max-width: 688px;
+  }
+  @include media(xs) {
+    max-width: 320px;
+  }
+}

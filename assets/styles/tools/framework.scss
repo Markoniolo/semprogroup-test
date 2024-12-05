@@ -1,0 +1,54 @@
+.smooth-scrollbar {
+  position: fixed !important;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 133px;
+  @include media(lg) {
+    top: 99px;
+  }
+  @include media(md) {
+    top: 102px;
+  }
+  @include media(sm) {
+    top: 123px;
+  }
+  @include media(xs) {
+    top: 83px;
+  }
+}
+
+.cont {
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 80px;
+  @include media(lg) {
+    padding: 0 40px;
+  }
+  @include media(md) {
+    padding: 0 30px;
+  }
+  @include media(sm) {
+    padding: 0 40px;
+  }
+  @include media(xs) {
+    padding: 0 20px;
+  }
+}
+
+.section {
+  margin-bottom: 140px;
+  @include media(lg) {
+    margin-bottom: 100px;
+  }
+  @include media(md) {
+    margin-bottom: 110px;
+  }
+  @include media(sm) {
+    margin-bottom: 80px;
+  }
+  @include media(xs) {
+    margin-bottom: 45px;
+  }
+}

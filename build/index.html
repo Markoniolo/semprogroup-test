@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2, minimum-scale=1.0">
+  <meta name="author" content="Lorem ipsum">
+  <meta name="description" content="Lorem ipsum">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="statics/css/main.css" />
+  <title>Главная страница</title>
+  <meta property="og:title" content="Главная страница" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__cont cont">
+      <div class="header__area">
+        <button class="header__menu">
+          <span class="header__burger">
+            <span class="header__burger-line"></span>
+          </span>
+          <span class="header__menu-span">МЕНЮ</span>
+        </button>
+        <div class="header__select">
+          <div class="header__select-value select-blue double-text-box">
+            <div class="header__select-value-span">
+              <div class="double-text" data-double-text="Выбрать квартиру">
+                <span>Выбрать квартиру</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__logo">
+          <img class="header__logo-image" src="statics/img/logo.svg" alt="">
+        </div>
+        <a class="header__phone double-text-box" href="tel:+74955272121" data-double-text="+7 495 527 21 21">
+          <div class="double-text" data-double-text="+7 495 527 21 21">
+            <span>+7 495 527 21 21</span>
+          </div>
+        </a>
+        <button class="header__order double-text-box" data-role="modal-opener" data-modal-id="modal-call">
+          <span class="double-text" data-double-text="ЗАКАЗАТЬ ЗВОНОК">
+            <span>ЗАКАЗАТЬ ЗВОНОК</span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="smooth-scrollbar">
+      <div class="cap section">
+        <div class="cap__cont cont">
+          <div class="cap__area">
+            <picture class="cap__picture">
+              <source srcset="statics/img/cap/cap_1_320.png" media="(max-width: 768px)">
+              <source srcset="statics/img/cap/cap_1_688.png" media="(max-width: 1024px)">
+              <source srcset="statics/img/cap/cap_1_964.png" media="(max-width: 1281px)">
+              <source srcset="statics/img/cap/cap_1_1360.png" media="(max-width: 1770px)">
+              <img class="cap__image" src="statics/img/cap/cap_1.png" alt="">
+            </picture>
+            <div class="cap__bottom">
+              <div class="cap__text">Дом бизнес-класса
+                <br>для ценителей роскоши
+              </div>
+              <img class="cap__logo" src="statics/img/cap/cap_logo.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about section">
+        <div class="about__cont cont">
+          <div class="about__area">
+            <div class="about__left">
+              <div class="about__span">о проекте</div>
+              <div class="about__picture-box">
+                <picture class="about__picture">
+                  <source srcset="statics/img/about/about_1_296.png" media="(max-width: 768px)">
+                  <source srcset="statics/img/about/about_1_290.png" media="(max-width: 1024px)">
+                  <source srcset="statics/img/about/about_1_408.png" media="(max-width: 1281px)">
+                  <source srcset="statics/img/about/about_1_567.png" media="(max-width: 1770px)">
+                  <img class="about__image" src="statics/img/about/about_1.png" alt="">
+                </picture>
+                <img class="about__decor" src="statics/img/about/about_decor.svg" alt="">
+              </div>
+            </div>
+            <div class="about__box">
+              <div class="about__title">
+                уютное и безопасное пространство для счастливой,
+                <span>спокойной и размеренной жизни</span>
+              </div>
+              <div class="about__text">
+                <span>Квартиры от 65 до 356 м2 с чистовой отделкой,</span>
+                балконами, лоджиями и террасами В собственной ЗАКРЫТОЙ охраняемой территориИ.
+              </div>
+              <div class="about__video">
+                <div class="about__video-left">
+                  <div class="about__video-title">ВИДЕО о ПРОЕКТЕ</div>
+                  <div class="about__video-time">1:25 минут</div>
+                </div>
+                <div class="about__video-line"></div>
+                <button class="about__video-button" data-element="about-video-play">
+                  <span class="about__video-button-text">play</span>
+                </button>
+                <video class="about__video-tag" src="statics/files/video.mp4" data-element="about-video-tag"></video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="modal-call modal" id="modal-call">
+    <div class="modal-inner">
+      <button class="modal-close"></button>
+      <form class="modal-call__form" data-element="modal-call-form">
+        <div class="modal-call__title">ЗАКАЗАТЬ ЗВОНОК</div>
+        <label class="modal-call__label label">
+          <input class="modal-call__input input" type="text" name="name" placeholder=" ">
+          <span class="modal-call__placeholder placeholder">Ваше имя</span>
+        </label>
+        <label class="modal-call__label label">
+          <input class="modal-call__input input" type="tel" name="phone" placeholder=" " data-role="phone-mask-input">
+          <span class="modal-call__placeholder placeholder">Телефон</span>
+        </label>
+        <label class="modal-call__label label">
+          <input class="modal-call__input input" type="email" name="mail" placeholder=" ">
+          <span class="modal-call__placeholder placeholder">e-mail</span>
+        </label>
+        <div class="modal-call__policy">
+          Нажимая на кнопку «Отправить», вы ознакомлены и соглашаетесь с
+          <a href="#">политикой обработки персональных данных</a>
+        </div>
+        <button class="modal-call__submit btn-blue double-text-box">
+          <span class="double-text" data-double-text="ОТПРАВИТЬ">
+            <span>ОТПРАВИТЬ</span>
+          </span>
+        </button>
+      </form>
+    </div>
+  </div>
+  <script src="statics/js/app.js" defer></script>
+</body>
+
+</html>

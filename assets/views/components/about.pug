@@ -1,0 +1,30 @@
+.about.section
+  .about__cont.cont
+    .about__area
+      .about__left
+        .about__span о проекте
+        .about__picture-box
+          picture.about__picture
+            source(srcset=staticImg('about/about_1_296.png') media=`(max-width: ${breakpoints.sm})`)
+            source(srcset=staticImg('about/about_1_290.png') media=`(max-width: ${breakpoints.md})`)
+            source(srcset=staticImg('about/about_1_408.png') media=`(max-width: ${breakpoints.lg})`)
+            source(srcset=staticImg('about/about_1_567.png') media=`(max-width: ${breakpoints.xl})`)
+            img.about__image(src=staticImg('about/about_1.png') alt='')
+          img.about__decor(src=staticImg('about/about_decor.svg') alt='')
+      .about__box
+        .about__title
+          | уютное и безопасное пространство для счастливой,
+          |
+          span спокойной и размеренной жизни
+        .about__text
+          span Квартиры от 65 до 356 м2 с чистовой отделкой,
+          |
+          | балконами, лоджиями и террасами В собственной ЗАКРЫТОЙ охраняемой территориИ.
+        .about__video
+          .about__video-left
+            .about__video-title ВИДЕО о ПРОЕКТЕ
+            .about__video-time 1:25 минут
+          .about__video-line
+          button.about__video-button(data-element="about-video-play")
+            span.about__video-button-text play
+          video.about__video-tag(src=`${pathStatics}/files/video.mp4` data-element="about-video-tag")

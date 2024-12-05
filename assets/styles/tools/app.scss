@@ -1,0 +1,64 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  outline: none;
+  padding: 0;
+  font-family: $font-main;
+  font-weight: 400;
+}
+
+:root {
+  --100vh: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  min-width: 320px;
+  min-height: 100vh;
+  color: $black;
+  background-color: $white;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+picture {
+  display: block;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+label {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  border: none;
+}
+
+button {
+  user-select: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}

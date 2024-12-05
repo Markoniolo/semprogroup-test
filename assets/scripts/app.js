@@ -1,0 +1,6 @@
+import './components/modal'
+import './components/modal-call-form'
+import './components/phone-mask'
+import './components/smooth-scrollbar'
+import './components/about-video'
+import './components/calculate-window-height'
